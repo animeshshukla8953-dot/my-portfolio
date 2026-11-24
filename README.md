@@ -2,7 +2,7 @@
 
 My personal portfolio website made with HTML, CSS and JavaScript.
 
-Live site:animeshshukla8953-dot/my-portfolio
+Live site:https://animeshportfoliio.netlify.app/
 
 ## Sections
 Home, About, Skills, Education, Projects, Contact
