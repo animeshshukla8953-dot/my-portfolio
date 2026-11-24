@@ -1,0 +1,79 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #fff;
+}
+
+a { color: #8c6d31; }
+
+/* Header */
+header {
+  background: #1e1c18;
+  color: #fff;
+  padding: 14px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+}
+header nav a { color: #fff; text-decoration: none; margin-left: 18px; }
+header nav a:hover { color: #d1b36e; }
+
+/* Sections */
+section { padding: 60px 30px; max-width: 1000px; margin: 0 auto; }
+section h2 { font-size: 28px; margin-bottom: 20px; }
+section p { margin-bottom: 12px; }
+.grey { background: #f5f1e8; max-width: none; }
+.grey > * { max-width: 940px; margin-left: auto; margin-right: auto; }
+
+/* Hero */
+.hero { text-align: center; padding: 100px 30px; }
+.hero h1 { font-size: 48px; margin: 10px 0; }
+.hero h3 { color: #8c6d31; margin-bottom: 10px; }
+.hero-text { max-width: 560px; margin: 15px auto 25px; }
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  background: #1e1c18;
+  color: #fff;
+  padding: 10px 22px;
+  border: 1px solid #1e1c18;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+.btn-light { background: #fff; color: #1e1c18; }
+
+/* Boxes (skills, projects, education) */
+.row { display: flex; flex-wrap: wrap; gap: 20px; }
+.box { flex: 1 1 260px; background: #fff; border: 1px solid #ccc; padding: 20px; }
+.box h3 { margin-bottom: 12px; }
+.tag { display: inline-block; border: 1px solid #8c6d31; color: #8c6d31; padding: 2px 10px; font-size: 13px; }
+progress { width: 100%; height: 12px; margin-bottom: 10px; accent-color: #8c6d31; }
+
+.facts { list-style: none; display: flex; flex-wrap: wrap; gap: 25px; margin-top: 15px; }
+
+/* Contact form */
+form { margin-top: 25px; max-width: 500px; }
+label { display: block; margin-top: 12px; font-weight: bold; }
+input, textarea { width: 100%; padding: 9px; margin: 5px 0 10px; border: 1px solid #999; font-size: 15px; font-family: inherit; }
+#formStatus { margin-top: 10px; }
+
+/* Footer */
+footer { background: #1e1c18; color: #fff; text-align: center; padding: 25px; }
+footer a { color: #d1b36e; }
+
+/* Mobile */
+@media (max-width: 700px) {
+  header { flex-direction: column; gap: 8px; padding: 12px; position: static; }
+  header nav a { margin: 0 8px; font-size: 14px; }
+  .hero { padding: 60px 20px; }
+  .hero h1 { font-size: 34px; }
+  section { padding: 40px 20px; }
+}
